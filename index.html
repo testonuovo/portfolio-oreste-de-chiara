@@ -2,24 +2,33 @@
 <html lang="it">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://googletagmanager.com"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JWGWPV45S6');
-</script>
+    <script async src="https://googletagmanager.com"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JWGWPV45S6');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Oreste De Chiara</title>
+    <meta name="description" content="Portfolio di Oreste De Chiara: Frontend Developer, Content Creator e Attivista Digitale. Scopri i progetti Oreste AI, Calma e le iniziative per Amnesty International.">
+    
     <style>
         :root {
             --primary: #2c3e50;
             --accent: #e74c3c;
             --bg: #f8f9fa;
             --text: #333;
+            --card-bg: #fff;
+            --tag-bg: #eee;
         }
+        
+        * {
+            box-sizing: border-box;
+        }
+
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             line-height: 1.6; 
@@ -28,6 +37,7 @@
             background: var(--bg); 
             color: var(--text); 
         }
+        
         header { 
             background: var(--primary); 
             color: #fff; 
@@ -35,44 +45,101 @@
             text-align: center; 
             border-bottom: 5px solid var(--accent);
         }
-        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px;}
-        header p { margin: 0.5rem 0 0 0; font-size: 1.2rem; opacity: 0.9; }
-        .container { max-width: 850px; margin: 2rem auto; padding: 0 1.5rem; }
+        
+        header h1 { 
+            margin: 0; 
+            font-size: 2.5rem; 
+            letter-spacing: 1px;
+        }
+        
+        header p { 
+            margin: 0.5rem 0 0 0; 
+            font-size: 1.2rem; 
+            opacity: 0.9; 
+        }
+        
+        .container { 
+            max-width: 850px; 
+            margin: 2rem auto; 
+            padding: 0 1.5rem; 
+        }
+        
         .card { 
-            background: #fff; 
+            background: var(--card-bg); 
             padding: 2rem; 
             margin-bottom: 2rem; 
             border-radius: 8px; 
             box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
             border-left: 5px solid var(--primary);
         }
-        .card.highlight { border-left-color: var(--accent); }
-        h2 { color: var(--primary); margin-top: 0; }
-        p { margin: 0 0 1rem 0; text-align: justify; }
+        
+        .card.highlight { 
+            border-left-color: var(--accent); 
+        }
+        
+        h2 { 
+            color: var(--primary); 
+            margin-top: 0; 
+            font-size: 1.6rem;
+        }
+        
+        p { 
+            margin: 0 0 1.2rem 0; 
+            text-align: justify; 
+        }
+        
+        .tags { 
+            margin-bottom: 1.2rem; 
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .tag { 
+            background: var(--tag-bg); 
+            padding: 0.3rem 0.6rem; 
+            border-radius: 4px; 
+            font-size: 0.85rem; 
+            color: #555;
+            font-weight: 500;
+        }
+        
+        .btn-container {
+            margin-top: 1rem;
+        }
+
         .btn { 
             display: inline-block; 
             background: var(--primary); 
             color: #fff; 
-            padding: 0.6rem 1.2rem; 
+            padding: 0.6rem 1.4rem; 
             text-decoration: none; 
             border-radius: 4px; 
             font-weight: bold;
-            transition: background 0.2s;
-            margin-right: 0.5rem;
-            margin-top: 0.5rem;
+            transition: background 0.2s ease, transform 0.1s ease;
         }
-        .btn:hover { background: #1a252f; }
-        .btn-accent { background: var(--accent); }
-        .btn-accent:hover { background: #c0392b; }
-        .tags { margin-bottom: 2rem; } /* Gestisce lo spazio sotto i tag in modo pulito */
-        .tag { 
-            background: #eee; 
-            padding: 0.2rem 0.6rem; 
-            border-radius: 4px; 
-            font-size: 0.85rem; 
-            margin-right: 0.5rem; 
-            color: #555;
-            display: inline-block;
+        
+        .btn:hover { 
+            background: #1a252f; 
+        }
+        
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-accent { 
+            background: var(--accent); 
+        }
+        
+        .btn-accent:hover { 
+            background: #c0392b; 
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            header p { font-size: 1rem; }
+            .card { padding: 1.5rem; }
+            .btn { width: 100%; text-align: center; }
         }
     </style>
 </head>
@@ -83,13 +150,13 @@
         <p>Frontend Developer | Content Creator | Attivista Digitale</p>
     </header>
 
-    <div class="container">
-        <div class="card highlight">
+    <main class="container">
+        <section class="card highlight">
             <h2>Chi Sono & Visione</h2>
             <p>Sono uno sviluppatore web e creatore di contenuti digitali. Utilizzo le mie competenze digitali e tecnologiche come strumenti per abbattere le barriere, promuovere l'accessibilità e sostenere i diritti civili.</p>
-        </div>
+        </section>
 
-        <div class="card">
+        <section class="card">
             <h2>Progetto: Oreste AI</h2>
             <div class="tags">
                 <span class="tag">JavaScript (Vanilla)</span>
@@ -98,12 +165,13 @@
                 <span class="tag">Accessibility</span>
             </div>
             <p>Un assistente vocale italiano online, gratuito e leggero, integrato in un intero ecosistema browser. Sviluppato interamente in JavaScript puro senza dipendenze esterne gravose, è stato ideato per offrire un'interfaccia accessibile e fluida anche in ambienti digitali complessi o a basse risorse hardware.</p>
-            <!-- NOTA: Sostituisci il link generico di GitHub qui sotto con quello del tuo progetto specifico se preferisci -->
-            <a href="https://testonuovo.github.io/oreste-ai/" class="btn btn-accent" target="_blank">Prova Oreste AI</a>
             <p><strong>Caratteristiche:</strong> Assistente vocale italiano online gratis, il primo che funziona direttamente sul browser, con sistema operativo integrato, contenuti motivazionali, sezioni dedicate alla meditazione ed altro.</p>
-        </div>
+            <div class="btn-container">
+                <a href="https://github.io" class="btn btn-accent" target="_blank" rel="noopener">Prova Oreste AI</a>
+            </div>
+        </section>
 
-        <div class="card">
+        <section class="card">
             <h2>Iniziativa: Io sto con Amnesty</h2>
             <div class="tags">
                 <span class="tag">Web Design</span>
@@ -112,23 +180,26 @@
                 <span class="tag">No-Profit</span>
             </div>
             <p>Piattaforma web indipendente creata e strutturata a supporto delle campagne globali di Amnesty International. Mi occupo dello sviluppo del layout visivo, dell'architettura informativa e del copywriting con l'obiettivo di diffondere la cultura della giustizia e dare voce a chi difende i diritti fondamentali di tutti gli individui.</p>
-            <a href="https://iostoconamnesty.altervista.org/" class="btn" target="_blank">Visita il sito</a>
-        </div>
+            <div class="btn-container">
+                <a href="https://altervista.org" class="btn" target="_blank" rel="noopener">Visita il sito</a>
+            </div>
+        </section>
             
-        <div class="card">
-            <h2>Prova la sessione meditazione, ritrova la tua calma interiore</h2>
+        <section class="card">
+            <h2>Sessione Meditazione: Calma</h2>
             <div class="tags">
                 <span class="tag">Oreste AI</span>
                 <span class="tag">Meditazione</span>
-                <span class="tag">Calma</span>
-                <span class="tag">Pace</span>
+                <span class="tag">Calma Interiore</span>
+                <span class="tag">Mindfulness</span>
             </div>
-            <p>Pagina dedicata alla meditazione per trovare la calma interiore.</p>
-            <!-- NOTA: Sostituisci il simbolo # con il link reale della tua pagina se ne hai una separata -->
-            <a href="https://eclectic-banoffee-561590.netlify.app/" target="_blank">Inizia la Meditazione</a>
-        </div>
+            <p>Pagina e web app dedicata alla meditazione guidata e alla respirazione consapevole. Pensata per aiutarti a gestire lo stress quotidiano, ridurre i livelli di ansia e ritrovare rapidamente il tuo equilibrio interiore direttamente dal browser.</p>
+            <div class="btn-container">
+                <a href="https://eclectic-banoffee-561590.netlify.app/" class="btn" target="_blank" rel="noopener">Inizia la Meditazione</a>
+            </div>
+        </section>
 
-        <div class="card">
+        <section class="card">
             <h2>Content Creation & Canva Designer</h2>
             <div class="tags">
                 <span class="tag">Visual Storytelling</span>
@@ -137,10 +208,11 @@
                 <span class="tag">Motivation</span>
             </div>
             <p>Realizzazione di micro-contenuti grafici e visuali focalizzati sulla motivazione personale e sul benessere emotivo. Attraverso lo studio del colore e della composizione su Canva, riverbero la mia ambizione in grafiche pulite e messaggi costruttivi pronti per la condivisione social.</p>
-            <!-- NOTA: Sostituisci il simbolo # con il link al tuo profilo Canva, Instagram o dove mostri le grafiche -->
-            <a href="#" class="btn" target="_blank">Vedi le mie Grafiche</a>
-        </div>
-    </div>
+            <div class="btn-container">
+                <a href="#" class="btn" target="_blank" rel="noopener">Vedi le mie Grafiche</a>
+            </div>
+        </section>
+    </main>
    
 </body>
 </html>
