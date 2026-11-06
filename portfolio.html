@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio creativo di Oreste De Chiara: video promozionali, grafica e contenuti social per il settore automotive.">
+  <meta name="theme-color" content="#151515">
+  <title>Portfolio creativo | Oreste De Chiara</title>
+  <style>
+    :root { --bg:#151515; --panel:#202020; --text:#fff; --muted:#c9c9c9; --orange:#FF6B00; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    a { color:inherit; }
+    .wrap { width:min(1080px,92%); margin:auto; }
+    header { padding:76px 0 58px; text-align:center; border-bottom:4px solid var(--orange); background:linear-gradient(135deg,#101010,#292929); }
+    .eyebrow { color:var(--orange); font-weight:700; letter-spacing:.16em; text-transform:uppercase; font-size:.82rem; }
+    h1 { font-size:clamp(2.2rem,6vw,4.3rem); line-height:1.08; margin:12px 0; }
+    header p { color:var(--muted); font-size:clamp(1rem,2.5vw,1.25rem); margin:0 auto; max-width:700px; }
+    .actions { display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .btn { display:inline-block; text-decoration:none; padding:12px 20px; border-radius:5px; background:var(--orange); color:#111; font-weight:800; }
+    .btn.outline { border:1px solid var(--orange); background:transparent; color:var(--text); }
+    main { padding:42px 0 70px; }
+    section { margin:0 0 42px; }
+    h2 { font-size:clamp(1.6rem,4vw,2.2rem); margin:0 0 10px; }
+    .lead { color:var(--muted); margin-top:0; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); gap:22px; }
+    .card { background:var(--panel); border:1px solid #333; border-top:3px solid var(--orange); border-radius:10px; padding:22px; overflow:hidden; }
+    .card h3 { margin:0 0 8px; font-size:1.25rem; }
+    .card p { color:var(--muted); }
+    video, .work-image { display:block; width:100%; border-radius:7px; background:#080808; }
+    video { max-height:560px; }
+    .work-image { height:auto; }
+    .placeholder { min-height:250px; border:1px dashed #666; border-radius:7px; display:grid; place-items:center; text-align:center; padding:24px; color:var(--muted); background:#191919; }
+    .tag { display:inline-block; margin-top:8px; color:var(--orange); font-size:.82rem; font-weight:700; letter-spacing:.04em; }
+    .about { background:#1d1d1d; padding:26px; border-radius:10px; border-left:4px solid var(--orange); }
+    .contact { text-align:center; padding:34px 22px; background:#202020; border-radius:10px; }
+    footer { padding:24px 0; text-align:center; color:#999; border-top:1px solid #333; font-size:.9rem; }
+    @media (max-width:600px) { header { padding:58px 0 44px; } .card { padding:16px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">Portfolio personale · Progetti dimostrativi</div>
+      <h1>Oreste De Chiara</h1>
+      <p>Grafica, video e contenuti social per raccontare prodotti, idee e brand con una comunicazione visiva chiara e coinvolgente.</p>
+      <div class="actions">
+        <a class="btn" href="#progetti">SCOPRI I MIEI PROGETTI</a>
+        <a class="btn outline" href="#contatti">CONTATTAMI</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="about">
+      <h2>Creatività digitale</h2>
+      <p class="lead">Creo contenuti visivi e video per comunicare idee, valorizzare prodotti e raccontare storie attraverso i social network. Questa selezione raccoglie concept dimostrativi realizzati a scopo di portfolio.</p>
+    </section>
+
+    <section id="progetti">
+      <h2>I miei progetti</h2>
+      <p class="lead">Esempi di comunicazione promozionale nel settore automotive.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Video promozionale automotive</h3>
+          <video controls preload="metadata" playsinline>
+            <source src="assets/video-automotive.mp4" type="video/mp4">
+            Il tuo browser non supporta la riproduzione video.
+          </video>
+          <p>Ideazione e realizzazione di un contenuto video promozionale dedicato al settore automobilistico, con testi, immagini, musica e voce narrante.</p>
+          <span class="tag">PROGETTO DIMOSTRATIVO · PORTFOLIO PERSONALE</span>
+        </article>
+
+        <article class="card">
+          <h3>Post pubblicitario per Instagram</h3>
+          <img class="work-image" src="assets/post-automotive.png" alt="Post dimostrativo automotive con automobile e messaggio promozionale">
+          <p>Creazione di un contenuto grafico promozionale per i social media, con attenzione alla comunicazione visiva, alla gerarchia dei testi e all'identità del brand.</p>
+          <span class="tag">PROGETTO DIMOSTRATIVO · PORTFOLIO PERSONALE</span>
+        </article>
+
+        <article class="card">
+          <h3>Storia Instagram automotive</h3>
+          <div class="placeholder">
+            <div><strong>Contenuto in arrivo</strong><br>La grafica della storia Instagram sarà aggiunta qui appena disponibile.</div>
+          </div>
+          <p>Concept verticale pensato per Instagram Stories, con immagine d'impatto, messaggio promozionale e invito all'azione.</p>
+          <span class="tag">PROGETTO DIMOSTRATIVO · PORTFOLIO PERSONALE</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contatti" class="contact">
+      <h2>Parliamo del tuo prossimo progetto</h2>
+      <p class="lead">Disponibile per opportunità professionali e collaborazioni nel settore della grafica, dei video e della comunicazione digitale.</p>
+      <div class="actions">
+        <a class="btn" href="mailto:orestedechiara89@gmail.com">SCRIVIMI VIA EMAIL</a>
+        <a class="btn outline" href="tel:+393472582586">CHIAMA 347 258 2586</a>
+      </div>
+    </section>
+    <p><a class="btn outline" href="index.html">TORNA AL SITO ORESTE DE CHIARA</a></p>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year">2026</span> Oreste De Chiara · Portfolio personale. Tutti i progetti automotive mostrati sono dimostrativi e non costituiscono comunicazioni ufficiali di marchi o concessionarie.</div>
+  </footer>
+</body>
+</html>
